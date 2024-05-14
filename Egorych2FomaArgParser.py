@@ -138,7 +138,7 @@ class Egorych2FomaArgParser:
         # read-write sections & options case sensitive
         foma_cp.optionxform = str
         
-        
+        foma_config_fixed = self.StripIniExtension(foma_config)+".fix.ini"
         foma_cp.read(foma_config_fixed)
         
         scp = self.cp
