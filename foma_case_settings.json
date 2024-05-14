@@ -1,0 +1,132 @@
+{
+  "title": "<i class=\"material-icons w3-text-indigo\" style=\"font-size:24px\" >developer_board</i> foma_case_settings.py",
+  "description": "foma case settings",
+  "type": "exec",
+  "execModule": "foma_case_settings.py",
+  "AddOptions": {
+    "value": "",
+    "discription": "Дополнительные опции запуска модуля"
+  },
+  "Число Маха": {
+    "value": 2.5,
+    "default": 2,
+    "min": 0.01,
+    "max": 10,
+    "discription": "Numeric property description",
+    "option": "-Mach",
+    "importance": 2
+  },
+  "AoA": {
+    "value": 0,
+    "default": 0,
+    "min": 0,
+    "max": 360,
+    "discription": "Numeric property description",
+    "option": "-AoA",
+    "importance": 2
+  },
+  "Начальное поле течения": {
+    "value": "",
+    "default": "",
+    "descripetion": "Файл поля с которого стартует расчет",
+    "option": "-initFieldFN",
+    "importance": 2
+  },
+  "Предыдущее поле течения": {
+    "value": "",
+    "default": "",
+    "descripetion": "Предыдущее перед стартовым поле течения (для 2 порядка по времени)",
+    "option": "-prevFieldFN",
+    "importance": 2
+  },
+  "Шаг по времени": {
+    "value": 0.00001,
+    "default": 0.00001,
+    "min": 0,
+    "max": 10,
+    "descripetion": "Стартовый шаг по времени",
+    "option": "-dt",
+    "importance": 2
+  },
+  "Начальное время": {
+    "value": -1,
+    "default": -1,
+    "min": -10,
+    "max": 10000000,
+    "descripetion": "Начальное время (время стартует с данной величины)",
+    "option": "-t0",
+    "importance": 2
+  },
+  "Порядок аппроксимации по времени": {
+    "value": 1,
+    "default": 1,
+    "select": [
+      1,
+      2
+    ],
+    "descripetion": "Порядок аппроксимации по времени",
+    "option": "-timeApproxOrder",
+    "importance": 2
+  },
+  "Число шагов по времени": {
+    "value": 100000,
+    "default": 100000,
+    "min": 0,
+    "max": 2147483600,
+    "descripetion": "Число шагов по времени",
+    "option": "-timeStepsCount",
+    "importance": 2
+  },
+  "Невязка сходимости к стационарному полю": {
+    "value": 1e-9,
+    "default": 1e-9,
+    "min": 0,
+    "max": 10,
+    "descripetion": "Невязка сходимости к стационарному полю",
+    "option": "-timeConvergence_dUdt",
+    "importance": 2
+  },
+  "Фактор увеличения шага по времени": {
+    "value": 1,
+    "default": 1,
+    "min": 1,
+    "max": 10,
+    "descripetion": "Адаптивный фактор увеличения шага по времени ",
+    "option": "-timeAdaptDtChangeFactor",
+    "importance": 2
+  },
+  "Число шагов без адаптации шага по времени": {
+    "value": 0,
+    "default": 0,
+    "min": 0,
+    "max": 1000000,
+    "descripetion": "Число шагов без адаптации шага по времени",
+    "option": "-timeAdaptNumFixedSteps",
+    "importance": 2
+  },
+  "Максимальный шаг по времени": {
+    "value": 0.01,
+    "default": 0.01,
+    "min": 0,
+    "max": 100,
+    "descripetion": "Максимальный шаг по времени",
+    "option": "-timeAdaptMaxDt",
+    "importance": 2
+  },
+  "inputs": {
+    "input_1": {
+      "label": "everyone",
+      "type": "everyone",
+      "option": "-input1",
+      "required": true
+    }
+  },
+  "outputs": {
+    "output_1": {
+      "label": "everyone",
+      "type": "everyone",
+      "option": "-output1",
+      "required": true
+    }
+  }
+}
