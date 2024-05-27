@@ -96,7 +96,8 @@ class Egorych2FomaArgParser:
         if (os.path.isfile(e2f_config)):
             self.cp.read(e2f_config)
         else:
-            makeE2FConfig("", e2f_config)
+            print("E2F warning: config {e2f_config} not found, making".format(e2f_config=e2f_config))
+            self.makeE2FConfig("", e2f_config)
     
     # update single option in e2f config
     def updateE2FOption(self, e2f_cfg_file, section, option, value):

@@ -1,0 +1,45 @@
+{
+        "title": "<i class=\"material-icons w3-text-indigo\" style=\"font-size:24px\" >developer_board</i> foma_ini_NSE2D.py",
+        "description": "Описание нового модуля",
+        "type": "exec",
+        "execModule": "foma_ini_NSE2D.py",
+        "AddOptions": {
+          "value": "",
+          "discription": "Дополнительные опции запуска модуля"
+        },
+        "inputs": {
+          "main": {
+            "label": "main",
+            "type": "file",
+            "fileType": "PolyMesh",
+            "isDir": false,
+            "option": "-main",
+            "required": true
+          },
+          "NSE2D": {
+            "label": "NSE2D",
+            "type": "file",
+            "fileType": "PolyMesh",
+            "isDir": false,
+            "option": "-NSE2D",
+            "required": true
+          },
+          "save": {
+            "label": "save",
+            "type": "file",
+            "fileType": "PolyMesh",
+            "isDir": false,
+            "option": "-save",
+            "required": true
+          }
+
+        },
+        "outputs": {
+          "output_1": {
+            "label": "everyone",
+            "type": "everyone",
+            "option": "-sdf",
+            "required": true
+          }
+        }
+      }
